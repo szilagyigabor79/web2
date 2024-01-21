@@ -1,0 +1,46 @@
+header {
+    padding: 0.5em;
+    color: black;
+    background-image: linear-gradient(to bottom right, white, gray);
+    text-align: center;
+    clear: left;
+}
+h1.header {
+    padding: 0;
+    margin: 0;
+}
+div#user {
+    float: right;
+}
+
+ul {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0 !important;
+    border-top: 1px solid white;
+    list-style-type: none;
+    background-image: linear-gradient(to bottom right, black, gray);
+}
+a {
+    float: left;
+    text-decoration: none;
+    color: white !important;
+    padding: 0.6em 0.6em;
+    border-right: 1px solid white;
+    text-decoration: none !important;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, white, gray);
+    background-attachment: fixed;
+    height: 100%;
+}
+
+input {
+    width: 20%;
+}
+
+a:hover { background-color:#ff3300} 
+li { display:inline }
