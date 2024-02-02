@@ -4,8 +4,8 @@ require '../../template.php';
 loadTemplate();
 
 $options = array(
-    "location" => "http://localhost/Beadando1/SOAP/Szerver/SoapServer.php",
-    "uri" => "http://localhost/Beadando1/SOAP/Szerver/SoapServer.php",
+    "location" => "http://localhost/SOAP/Szerver/SoapServer.php",
+    "uri" => "http://localhost/SOAP/Szerver/SoapServer.php",
     'keep_alive' => false,
 );	
 

@@ -15,25 +15,25 @@ function loadTemplate()
     echo '<body>';
     echo '<nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="http://localhost/Beadando1/index.php">Főoldal</a>
+                <a class="navbar-brand" href="http://localhost/index.php">Főoldal</a>
                 
                 <div class="navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" href="/Beadando1/MVC/controllers/SzallodakController.php">Szállodák</a>
-                        <a class="nav-link" href="/Beadando1/SOAP/Kliens/SoapClient.php">Tavaszi utak</a>
-                        <a class="nav-link" href="/Beadando1/MVC/controllers/velemenyekController.php">Vélemények</a>
-                        <a class="nav-link" href="/Beadando1/SOAP/Kliens/arfolyamokClient.php">Árfolyamok</a>
+                        <a class="nav-link" href="/MVC/controllers/SzallodakController.php">Szállodák</a>
+                        <a class="nav-link" href="/SOAP/Kliens/SoapClient.php">Tavaszi utak</a>
+                        <a class="nav-link" href="/MVC/controllers/velemenyekController.php">Vélemények</a>
+                        <a class="nav-link" href="/SOAP/Kliens/arfolyamokClient.php">Árfolyamok</a>
                         <a class="nav-link disabled">Utazzon velünk!</a>';
 
                         
                         if ( isset($_SESSION["fname"]) )
                         {
-                            echo '<form action="http://localhost/Beadando1/kilepett.php" method="post"> <input type="submit" name="logout" value="Kilépés"/> </form>';
+                            echo '<form action="http://localhost/kilepett.php" method="post"> <input type="submit" name="logout" value="Kilépés"/> </form>';
                         } 
                         else 
                         {
-                            echo '<form action="/Beadando1/belepo_form.php" method="post"> <input type="submit" name="belepes" value="Belépés"/> </form>';
-                            echo '<form action="/Beadando1/regisztracio_form.php" method="post"> <input type="submit" name="regisztracio" value="Regisztráció"/> </form>';
+                            echo '<form action="/belepo_form.php" method="post"> <input type="submit" name="belepes" value="Belépés"/> </form>';
+                            echo '<form action="/regisztracio_form.php" method="post"> <input type="submit" name="regisztracio" value="Regisztráció"/> </form>';
                         }
 
                         if ( isset($_SESSION["fname"]) )

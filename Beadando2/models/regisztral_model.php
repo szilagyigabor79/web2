@@ -7,7 +7,7 @@ class Regisztral_Model
 
 	function __construct () 
     {
-        $this->dbh = new PDO('mysql:host=localhost;dbname=hiz8n9', 'root', '');
+        $this->dbh = new PDO('mysql:host=localhost;dbname=cukor', 'cukor', 'kafferBIValy');
         $this->dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
     }
 

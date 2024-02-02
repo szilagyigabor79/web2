@@ -4,8 +4,10 @@ class SzallodakModel
 {
 
     function __construct()
+    
     {
-        $this->dbh = new PDO('mysql:host=localhost;dbname=utazas', 'root', '');
+        $this->$dbh = new PDO('mysql:host=localhost;dbname=utazas', 'utazas', 'kafferBIValy',
+        array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
         $this->dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
     }
 
