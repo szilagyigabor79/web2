@@ -1,8 +1,8 @@
 <?php
 
-require '..\Models\SzallodakModel.php';
-require '..\Views\SzallodakView.php';
-require '..\..\template.php';
+require '../models/SzallodakModel.php';
+require '../views/SzallodakView.php';
+require '../../template.php';
 loadTemplate();
 
 

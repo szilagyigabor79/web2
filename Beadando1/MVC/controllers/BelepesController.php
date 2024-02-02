@@ -2,8 +2,8 @@
 <body>
 
 <?php
-require '..\Models\UserModel.php';
-require '..\..\template.php';
+require '../models/UserModel.php';
+require '../../template.php';
 loadTemplate();
 
 class BelepesController

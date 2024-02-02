@@ -1,8 +1,8 @@
 <?php
 
-require '..\Models\VelemenyekModel.php';
-require '..\Views\velemenyekView.php';
-require '..\..\template.php';
+require '../models/VelemenyekModel.php';
+require '../views/velemenyekView.php';
+require '../../template.php';
 loadTemplate();
 
 

@@ -1,5 +1,6 @@
 <?php
 
+
 function loadTemplate()
 {
     session_start();
@@ -28,7 +29,7 @@ function loadTemplate()
                         
                         if ( isset($_SESSION["fname"]) )
                         {
-                            echo '<form action="http://localhost/kilepett.php" method="post"> <input type="submit" name="logout" value="Kilépés"/> </form>';
+                            echo '<form action="/kilepett.php" method="post"> <input type="submit" name="logout" value="Kilépés"/> </form>';
                         } 
                         else 
                         {
