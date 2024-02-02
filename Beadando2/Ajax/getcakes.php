@@ -32,7 +32,7 @@ function listCakes($dbresult)
     echo "</tbody></table>";
 }
 
-$dbh = new PDO('mysql:host=localhost;dbname=hiz8n9', 'root', '');
+$dbh = new PDO('mysql:host=localhost;dbname=cukrasz', 'cukrasz', 'kafferBIValy');
 $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
 $sqlSelect = "select * from ar inner join suti on ar.sutiid = suti.id inner join tartalom ON suti.id = tartalom.sutiid where egyseg = :egyseg and tipus = :tipus and mentes = :mentes";
 $response = $dbh->prepare($sqlSelect);

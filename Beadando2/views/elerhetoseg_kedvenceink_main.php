@@ -30,7 +30,7 @@ A rigójancsi egy hagyományos magyar, általában kocka alakú, csokoládéspis
 <canvas id="myChart" width="600" height="400" style="margin: auto"></canvas>
 
 <?php
-$dbh = new PDO('mysql:host=localhost;dbname=hiz8n9', 'root', '', array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
+$dbh = new PDO('mysql:host=localhost;dbname=cukrasz', 'cukrasz', 'kafferBIValy', array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
 $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
 $sqlSelect = "select nev, ertek from suti inner join ar on suti.id = ar.sutiid limit 10";
 $response = $dbh->prepare($sqlSelect);
