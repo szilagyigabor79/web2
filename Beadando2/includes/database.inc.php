@@ -1,8 +1,8 @@
 <?php
     define('HOST', 'localhost');
-    define('DATABASE', 'hiz8n9');
-    define('USER', 'root');
-    define('PASSWORD', '');
+    define('DATABASE', 'cukrasz');
+    define('USER', 'cukrasz');
+    define('PASSWORD', 'kafferBIValy');
     
     class Database {
         private static $connection = FALSE;
